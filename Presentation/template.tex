@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Focus Beamer Presentation
+% LaTeX Template
+% Version 1.0 (8/8/18)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Pasquale Africa (https://github.com/elauksap/focus-beamertheme) with modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% Template license:
+% GNU GPL v3.0 License
+%
+% Important note:
+% The bibliography/references need to be compiled with bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+\usepackage{graphicx}
+
+\usetheme{focus} % Use the Focus theme supplied with the template
+% Add option [numbering=none] to disable the footer progress bar
+% Add option [numbering=fullbar] to show the footer progress bar as always full with a slide count
+
+% Uncomment to enable the ice-blue theme
+%\definecolor{main}{RGB}{92, 138, 168}
+%\definecolor{background}{RGB}{240, 247, 255}
+
+%------------------------------------------------
+
+\usepackage{booktabs} % Required for better table rules
+
+%----------------------------------------------------------------------------------------
+%	 TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+\title{Xpire: ASDA Stocking Support System}
+
+
+\author{Luke Towell}
+
+\institute{School of Computer Science\\University of Liverpool}
+
+\date{3rd July 2020}
+
+%------------------------------------------------
+
+\begin{document}
+
+%------------------------------------------------
+
+\begin{frame}
+	\maketitle % Automatically created using the information in the commands above
+\end{frame}
+
+
+
+%------------------------------------------------
+
+\begin{frame}{Introduction}
+	This project is being completed on behalf of ASDA. ASDA is one of the four largest supermarkets in the UK stocking a variety of goods including fresh,
+	frozen and ambient food goods as well as many other items. I am currently employed by ASDA as an Application Developer. \\
+\end{frame}
+
+
+
+\begin{frame}{Problem Statement}
+	At the moment sustainability and environmental responsibility are very prevelant in our day
+	to day lives.\\
+	\pause
+	\begin{figure}
+		\includegraphics[width=\linewidth]{./images/wrapData.png}
+		\caption{WRAP Food Waste Data \cite{wrap-food-drink}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Problem Statement w.r.t ASDA}
+	\textbf{How does this impact ASDA?}
+	\pause
+	\begin{figure}
+		\includegraphics[width=\linewidth]{./images/moreWasteData.png}
+		\caption{ASDA 2018 Food Waste Data \cite{asda-food-waste-data}}
+	\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Solution}
+	The solution that I am planning on implementing will include: \\
+	- An system which is capable of accessing ASDA stock data and informing colleagues what items are going out of stock. \\
+	- The solution will allow colleagues access from multiple device types including mobile and desktop computers \\
+	- Provide colleagues in the Fresh, Dairy and chilled produce departments adequate notice that stock expiry is approaching so they can decide which actions to take.
+\end{frame}
+
+\begin{frame}{Why have I decided to target specific groups?}
+	\textbf{Why those departments?}
+	\pause
+	\begin{figure}
+		\includegraphics[width=\linewidth]{./images/WasteData.png}
+		\caption{ASDA 2018 Food Waste by Department \cite{asda-food-waste-data}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Proposed Architecture}
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{./images/architecture_diagram.png}
+		\caption{Xpire Architecture Diagram}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Proposed Plan}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.7]{./images/gannt1.png}
+		{\caption*{Xpire Project Gannt Chart June - July}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Proposed Plan}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.7]{./images/gannt2.png}
+		{\caption*{Xpire Project Gannt Chart August - September}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Agile Development}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.7]{./images/agile.png}
+		\caption{Agile Development Lifecycle\cite{agile-model}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{CI / CD}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.7]{./images/ci-cd.png}
+		\caption{Continuous Integration Flow}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Evaluation}
+	\textbf{How will I assess success}\\
+	I plan on assessing the success of my project in 2 ways.\\
+	- Via feedback from stores and colleagues within ASDA Head Office\\
+	- I am hoping for an in store Proof Of concept which will then allow me to gather and compart waste data from prior to my application being installed in a store against waste data whilst the application is being used in the store.\\
+\end{frame}
+
+\begin{frame}[focus]
+	Thank you for your time!\\
+	\textbf{Questions?}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	 CLOSING/SUPPLEMENTARY SLIDES
+%----------------------------------------------------------------------------------------
+
+\appendix
+
+\begin{frame}{References}
+	\bibliography{example.bib}
+	\bibliographystyle{plain}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
