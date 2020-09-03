@@ -28,7 +28,7 @@ ASDA Stocking Support System (Xpire)}
 \author{
 Luke Michael Towell
 \\    \\    \\
-Synopsis and Design
+Final Report
 \\    \\
 Submitted to 
 \\    \\    \\ 
@@ -57,9 +57,8 @@ MASTER OF SCIENCE
 
 The aim of the project is to create an application which enables ASDA colleagues to identify
 and inform colleagues of which items within their fresh departments are going out of date and
-need to be marked down or could potentially be provided to food shelters. The technology that
-will be utilised in this project will make use of mobile technology, backend web services and 
-Database stored procedures in order to analyse and inform colleagues which items are likely to go 
+need to be marked down or could potentially be provided to food shelters. This project will make use of mobile technology,
+ backend web services and Database stored procedures in order to analyse and inform colleagues which items are Scheduled to go 
 out of date on which date and then informs colleagues to go and reduce the products. This application
 will be used throughout ASDA stores by colleagues on a daily basis and could produce a significant
 cost saving and waste reduction.
@@ -70,8 +69,6 @@ into an ASDA store in the future. The requirements and periodic demoing of the p
 be provided by ASDA technology colleagues.
 
 \newpage
-
-
 
 %%%%  STUDENT DECLARATION ON PLAGIARISM
 \chapter*{\center Student Declaration} 
@@ -135,14 +132,10 @@ degree of this or any other university or degree-awarding body.
 
 \chapter{Project Introduction}\label{chap:intro}
 
-\section{Scope}
-
-\subsection{ASDA}
-
+\section{Summary of Project Proposal}
 
 \subsection{Problem Statement}\label{sec:problem}
-
-The aim of this project is to design an application and stock management system which is able
+The aim of this project is to design an application and waste management system which is able
 to inform store managers and store colleagues on which items of stock are going out of date or
 close to going out of date on the shop floor. This stock will then either be marked 
 down on the shop floor in order to be sold on the day or will be identified as able to be donated to other charitable
@@ -164,8 +157,58 @@ If I am able to deploy a POC into a live store then I will also assess the succe
 application by comparing the product waste prior to usage in store against the wastage from 
 the time that the application is used in store. 
 
-\subsection{Potential Expansion}
-\subsubsection{Timesheeting}
+\subsection{Project Methodology}
+The methodology that I have chose to implement for my project was a scrum agile methodology
+which involved breaking the project down into smaller requirements which needed to be completed in 
+iterations of development spread over the 8 weeks I developed my project in.  
+\\
+\\
+The project included the management and development of multiple application features. Each of the features were 
+detailed and documented on a Trello kanban board (See Figure~\ref{fig:kanbanBoard}).  As can be seen in Figure 1 the kanban board is broken down into "To Do", "Doing" and "Done" swim lanes 
+which allows the user to easily identify the state of the feature that is being developed. 
+In figure 2 you can see the updated Kanban board as I have been working on the project and moving the different requirements across the board as they have progressed.
+% TODO: Add in figure of Kanban board
+
+\chapter{Final Outcomes}
+The aim of this project from the outset was to create a software system which makes use of multiple applications
+ to give the in store user a clean and easy to use way of managing in store waste. In the following chapter I 
+ discuss what has been produced and I discuss some of the user flows which take place within the system.
+\section{Output of the project}
+% TODO: CITE SPECIFICATION AND DESIGN DOCUMENT
+\subsection{User Interface Design}
+As part of the development of the system a key to ensuring the ease of use of the application was to take care and attention when
+designing the user interface of the different applciations. In order to do this I made use of Balsamic in order to design the user
+interface of both the mobile and web applications. Appendix 2 shows the outcomes of the designs, Image 4 shows an example of the 
+interface design in Balsamiq and the final user interface that was produced.
+\subsection{Database Schema Design}
+\subsection{Developed Applications}
+\subsubsection{Mobile Application}
+\subsubsection{Web Application}
+\subsubsection{Web Services}
+
+\section{Project Review}
+\subsection {Successes of the project}
+
+\subsection {Challenges of the Project}
+Throughout the project there have been issues which have arisen an the solution has been developed. In the early stages of the project it was identified that due to data security and authentication security utilised by ASDA I would be unable to make use of data and Authentication systems. This has presented various different issues which include:
+\begin{itemize}
+    \item Data availability
+    \item User Authentication
+    \item Application and Database hosting
+    \item Store Usage
+\end{itemize}
+
+All of these issues have been over come or worked around in order to produce a working software system. Each of the Issues listed above will be discussed in more detail along with the relevant work arounds in the dissertation of this project.
+\section{Solution Evaluation}
+
+\subsection{Colleague Feedback}
+
+\chapter{Potential Expansion}
+\section{Potential Project Expansions and Features}
+The following chapter includes the potential expansions which could be applied to the application after it has been completed.
+ These would require more research and could potentially be projects in their own right.
+
+\subsection{Timesheeting}
 Through the use of data mining from the data collected by the application, we should be able to accurately predict
 how long it takes staff to organise and mark down the expiring items within their respective departments. Once 
 this data has been collected then theoretically it could be used in order to calculate how many staff are needed 
@@ -173,157 +216,12 @@ in order to mark down items on a particular day depending on the number of items
 as the length of time that it is likely to take the staff in order to mark down or redistribute the expiring stock
 on the shop floor. 
 
-\subsubsection{Stock Prediction and Inventory Management}
+\subsection{Stock Prediction and Inventory Management}
 
 By analysing the number of items which are expiring in individual stores we should also be able to perform trend 
 analysis on the data which should highlight items of stock which are repeatedly marked down. This trend analysis 
 could then be used to inform store managers and the ASDA inventory management systems of any over ordering which is 
 occuring and allow for more accurate stock levels to reduce potential waste in the future.
-
-\section{Approach}
-
-\subsection{Project Methodology}
-The methodology that I have chosen to implement this project in is a scrum agile methodology which involves short 
-iterations of development spread over the 8 weeks I will be developing my solution in. 
-This will include the breaking down of the application development into smaller development tasks which can be completed easily. 
-\\
-\\
-Scrum involves the sizing, estimation and development of the development tasks prior to development. Once completed
-the developed features will be demoed to the project supervisors and stakeholders in order to gain feedback which 
-can potentially be added to the project backlog and acted on in following sprints.
-\\
-The project will include the management and development of multiple application features. Each of the features will 
-be detailed and documented on a kanban board (See Figure~\ref{fig:kanbanBoard}) which will be managed via the Trello 
-application.  As can be seen in Figure 1 the kanban board is broken down into "To Do", "Doing" and "Done" swim lanes 
-which allows the user to easily identify the state of the feature that is being developed.
-\begin{figure}
-    \includegraphics[width=\linewidth]{./assets/images/Kanban-board.png}
-    \caption{Xpire Kanban Board}
-    \label{fig:kanbanBoard}
-\end{figure}
-
-Scrum typically consists of 5 different types of meetings: the stand up, the planning, the Retro and the refinement 
-session. All of these sessions are performed once throughout the sprint in order to plan, agree and highlight any 
-issues that the development team might be having throughout the week.
-
-%%%%  DESIGN
-
-\chapter{Design}\label{chap:design}
-This chapter covers the planned design of the Xpire system. At the moment all of the plans
-for the application are theoretical and could potentially change however I believe that
-this is a sensible approach which should be suitable for the proposed system.
-
-\section{Architectural Diagram}
-
-\begin{figure}[h!]
-    \includegraphics[width=\linewidth]{./assets/images/architecture_diagram.png}
-    \caption{Xpire Architecture Diagram}
-    \label{fig:architecture-diagram}
-\end{figure}
-
-As shown in the architecture diagram (Fig.~\ref{fig:architecture-diagram})
-- The Application will be usable via 3 methods:
-\\
-\\
-- An android application which is available on in store handsets called TC70, TC70X or TC72. These devices are available to all colleagues who work within ASDA stores and are frequently used for other applications within the store ecosystem.
-\\
-\\
-- An android and iOS application which will be downloadable and usable from store colleagues personal devices via an internal application management system.
-\\
-\\
-- A web browser which is accessible from a managers workbench or a colleague laptop. This will give colleagues an alternative view of the application due to the fact that the application is not being accessed via a mobile device.
-
-\subsection{Application Breakdown}
-As shown in the architectural diagram in Figure~\ref{fig:architecture-diagram} the application will consist of three separate applications and two databases.
- Below are the descriptions and breakdowns of the applications:
-
-\subsubsection{Mobile Application}
-The mobile versions of the application will be written using React-Native which is a modern mobile development
- framework created and maintained by Facebook. The reason for choosing React Native is because it is a well known and well documented framework with a large and active user community. It is also the recommended mobile development framework for ASDA and Wal-Mart. 
-
-\subsubsection{Web Application}
-The web application will be written using React which is very similar to React-native and has also been widely adopted. There are plenty of libraries for React and it is the chosen development framework because I am already familiar with the React ecosystem. 
-
-\subsubsection{Backend Web Services}
-The web services of the system are going to be developed using Java Spring Boot which ensures that the services will be enterprise worthy. The services will be hosted within a docker image and will be able to be span up on either Azure application servers or Azure Kubernetes clusters. The web services will be written using the repository design pattern\cite{gamma1994design} for interacting with the databases. All services will be thoroughly unit tested. The web services will be documented using Swagger so that users and future developers are easily able to pick up and alter the code base. 
-
-\subsubsection{Azure SQL Databases}
-SQL data which will be encrypted in transit and at rest manually. This database will contain the item data which is discussed in Chapter~\ref{chap:data} below. At the moment I am unsure as to if I will store images of the individual items within BLOB storage. If I do decide to store item images then the SQL database will also store the references to the relevant item images.
-
-\subsubsection{Azure Cosmos Database}
-I have chosen to use Azure Cosmos DB for logging data due to the speed that items can be both written and retrieved from the data stores. Azure Cosmos DB is the Azure non relational database offering with encryption both in transit and at rest.
-
-\subsubsection{Authentication \& Authorisation}
-SingleSignOn is the authentication method which I have chosen to adopt for all of my applications. This allows the applications to integrate well within the ASDA technology stack and ensures that colleagues will be able to authenticate with their normal credentials. This removes the need for colleagues to need to remember new credentials or to have to have other accounts created in order to use the Xpire application. 
-
-\subsection{Interaction Chart}
-The Interaction Chart (see Fig~\ref{fig:eventTrace}) below highlights how a user interacts with the planned application. Figure ~\ref{fig:eventTrace} details the processes that are involved in one simple use case of the application in order to complete the scanning and checking of product details and expiry dates with a mobile device.
-The event trace details how a colleague will scan the barcode of an item  in order to query the DB for item information and expiration date. Using the information provided the employee will then be able to reduce the item on the shop floor.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.7]{./assets/images/eventTrace-itemscan.png}
-    \caption{Mobile Event Trace}
-    \label{fig:eventTrace}
-\end{figure}
-
-\chapter{Data}\label{chap:data}
-\section{Data used in the system}
-The data used in the system will be item based information which will include a unique identifier
-for an item, the expiry date / use by date of the item, the product name, the producer of the item, 
-the store quantity of an item and an image of the item. 
-All of this data will be available from internal ASDA databases. 
-\\
-\\
-Other data which the application will make use of are the request details of requests 
-within the system. This data is collected for the purpose of troubleshooting and monitoring
-and alerting of potential issues within the application. The data will include, Request Type,
-Request Content, Timestamp, Response Content, Response Information and Request Origin.
-   
-   
-\section{Ethical Use of Data}
-The data that is gathered in my application is not human related data.
-The application only deals with the gathering of information on items and stores.
-No user identifiable data is used therefore I have agreed with my supervisor that
-there is no need to need to complete the Ethical Approval Form.
-\\
-\\
-The only human data that will be used within this project is the feedback and opinions
-of employees for ASDA which will be used in order to assess wether the goals of the 
-project have been met. The consent of those whose feedback I will be using will be 
-collected as and when it is required and Each individual will complete a consent form
-prior to their opinions being included in the final report.
-
-\chapter{Plan}\label{chap:plan}
-The main milestones of my project are outlined in the Gannt Chart in Appendix~\ref{app:ganntchart}. 
-
-The main milestones identified are: 
-\subsubsection{Research}
-I have so far completed this section of the priject which involved research into the background of my project as well as looking into previous solutions that have been developed which offer similar functionality to the system I intend to produce.
-\subsubsection{Synopsis}
-This section will be complete with the production of this document which details what the project aims are and an initial plan of how I will complete my aims.
-\subsubsection{Design}
-The design phase of the project is going to focus on the production of user interfaces for the various applications within the system.
-\subsubsection{Development Sprints}
-The development section is the longest continuous section of the project which I plan on splitting into eight, one week iterations which will include planning, development and demoing of individual features. This has been dicussed further in chapter~\ref{chap:intro}.
-\subsubsection{Testing}
-As part of the agile methodology I will be testing my code as I write it in each iteration.
-\subsubsection{Demo / Deployment}
-I have included a main milestone which is the final demo of the complete working system to the project stakeholders in order to gain final feedback which will be used to assess wether the project has completed its main aims. 
-\subsubsection{Write up}
-The write up of the project documentation is the longest individual section of my project as I aim to write up the documentation as I work through the project. 
-\subsubsection{Dissertation proof read and finalisation}
-The final stage of the project includes the proof reading of my final report and final adjustments prior to submission.
-
-\chapter{Final Outcomes}
-\section{Output of the project}
-
-\section{Project Review}
-\subsection {Successes of the project}
-
-\subsection {Challenges of the Project}
-
-\section{Solution Evaluation}
 %%%%   REFERENCES
 
 %%%%  Section for references, using the \bibitem directive to 
@@ -331,7 +229,7 @@ The final stage of the project includes the proof reading of my final report and
 \newpage
 \addcontentsline{toc}{chapter}{Appendices}
 \begin{appendix}
-\chapter{Xpire Project Gannt Chart}\label{app:ganntchart}
+\chapter{}\label{app:ganntchart}
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=1.0]{./assets/images/gannt1.png}
