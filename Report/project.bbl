@@ -1,3 +1,17 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{trello}
+Atlassian.
+\newblock Trello project management software, 2020.
+
+\bibitem{balsamiq}
+Balsamiq.
+\newblock Balsamiq user interactive design software, 2020.
+
+\bibitem{gamma1994design}
+E.~Gamma, R.~Helm, R.~Johnson, and J.~Vlissides.
+\newblock {\em Design Patterns: Elements of Reusable Object-Oriented Software}.
+\newblock Addison-Wesley Professional Computing Series. Pearson Education,
+  1994.
 
 \end{thebibliography}
